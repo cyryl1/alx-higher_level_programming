@@ -1,2 +1,16 @@
-#!/usr/bin/python3
-print("Best School")
+#!/usr/bin/bash
+
+#check if $PYFILE is set
+if [ -z "$PYFILE" ]; then
+    echo "Error: Environment variable PYFILE is not set."
+    exit 1
+fi
+
+# Check if the file exists
+if [ ! -f "$PYFILE" ]; then
+    echo "Error: File $PYFILE does not exist."
+    exit 1
+fi
+
+# Run the python script
+python3 "$PYFILE"
