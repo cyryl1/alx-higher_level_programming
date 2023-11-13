@@ -5,6 +5,6 @@ def multiple_returns(sentence):
     first = sentence[0]
     
     if sentence == "":
-        return (first = None)
+        return (first == None)
     else:
         return length, first
