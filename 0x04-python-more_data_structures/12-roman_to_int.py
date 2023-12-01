@@ -12,8 +12,7 @@ def roman_to_int(roman_string):
             "D": 500,
             "M": 1000
             }
-
-    result = 0
+result = 0
 
     for i in range(len(roman_string)):
         if roman.get(roman_string[i], 0) == 0:
