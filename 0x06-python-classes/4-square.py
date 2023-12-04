@@ -2,18 +2,18 @@
 
 """Square class definition."""
 class Square:
-    """Represent a class."""
+    """Represent a square."""
     def __init__(self, size=0):
-        """Class initialization.
+        """Square Class initialization.
 
-        Arguments:
+        Args:
             size (int): Size of Square.
         """
         self.size = size
 
-        """Get/set the size of the square."""
     @property
     def size(self):
+        """Get/set the size of the square."""
         return (self.__size)
 
     @size.setter
@@ -24,6 +24,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    """Return area"""
     def area(self):
+        """Return area"""
         return (self.__size * self.__size)
