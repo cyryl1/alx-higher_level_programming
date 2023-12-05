@@ -1,0 +1,77 @@
+# 3-say_my_name.txt
+
+===============================
+How to Use 3-say_my_name.py
+===============================
+
+This module defines a function ``say_my_name(first_name, last_name)``.
+
+Usage
+=====
+
+``say_my_name(...)``` prints a formatted string indicating the provided first and last names.
+
+::
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("John", "Doe")
+    My name is John Doe
+
+    >>> say_my_name("Alice", "Smith")
+    My name is Alice Smith
+
+    >>> say_my_name("Bob", "Jones")
+    My name is Bob Jones
+
+Non-Strings
+============
+
+``say_my_name()`` expects that both arguments are strings.
+If either argument is not a string, a ``TypeError`` is raised:
+
+::
+
+    >>> say_my_name("John", 123)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+::
+
+    >>> say_my_name(456, "Doe")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+Non-ASCII Characters
+====================
+
+The function handles names with non-ASCII characters:
+
+::
+
+    >>> say_my_name("José", "García")
+    My name is José García
+
+    >>> say_my_name("Yuki", "Tanaka")
+    My name is Yuki Tanaka
+
+Empty Names
+===========
+
+If either the first name or last name is an empty string, a ``ValueError`` is raised:
+
+::
+
+    >>> say_my_name("", "Doe")
+    Traceback (most recent call last):
+        ...
+    ValueError: first_name cannot be an empty string
+
+::
+
+    >>> say_my_name("John", "")
+    Traceback (most recent call last):
+        ...
+    ValueError: last_name cannot be an empty string
+

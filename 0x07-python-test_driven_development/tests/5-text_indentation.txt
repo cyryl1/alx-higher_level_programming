@@ -1,0 +1,59 @@
+# 5-text_indentation.txt
+
+=======================================
+How to Use 5-text_indentation.py
+=======================================
+
+This module defines a function ``text_indentation(text)``.
+
+Usage
+=====
+
+``text_indentation(...)``` prints a modified version of the provided text. The function inserts 2 new lines
+after each occurrence of the characters `.` (period), `?` (question mark), and `:` (colon).
+
+::
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text = "This is a sample text. It has sentences with dots. And also some questions? And maybe a few colons: like this one."
+    >>> text_indentation(text)
+    This is a sample text.
+
+    It has sentences with dots.
+
+    And also some questions?
+
+    And maybe a few colons:
+
+    Like this one.
+
+Non-String Text
+================
+
+``text_indentation()`` expects that the provided text is a string.
+If the text is not a string, a ``TypeError`` is raised:
+
+::
+
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation(['This', 'is', 'a', 'list'])
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+No Occurrence of ., ?, or :
+==========================
+
+If the provided text does not contain any occurrences of `.`, `?`, or `:`, the original text is printed:
+
+::
+
+    >>> text_indentation("This text has no special characters")
+    This text has no special characters
+
