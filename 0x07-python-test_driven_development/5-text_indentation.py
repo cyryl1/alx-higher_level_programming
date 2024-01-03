@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """Define function to indent"""
 
+
 def text_indentation(text):
     """
-    Print a modified version of the provided text. Inserts 2 new lines after each occurrence of
+    Print a modified version of the provided text.
+    Inserts 2 new lines after each occurrence of
     '.', '?', and ':'.
 
     Args:
