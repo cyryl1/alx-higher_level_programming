@@ -3,4 +3,5 @@
 
 
 class BaseGeometry:
+    """To calculate the base geometry of a circle."""
     pass
