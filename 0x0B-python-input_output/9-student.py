@@ -18,7 +18,7 @@ class Student():
 
     def to_json(self):
         return {
-                'name': self.name,
-                'age': self.age,
-                'grade': self.grade
+                'first_name': self.first_name,
+                'last_name': self.last_name,
+                'age': self.age
                 }
