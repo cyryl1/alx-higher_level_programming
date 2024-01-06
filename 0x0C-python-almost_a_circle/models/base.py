@@ -9,7 +9,7 @@ class Base:
     def __init__(self, id=None):
         """Initialize Base class.
         Args:
-            id(int): instance variable.
+            id(int): instance variable to be used.
         """
         if (id is not None):
             self.id = int(id)
