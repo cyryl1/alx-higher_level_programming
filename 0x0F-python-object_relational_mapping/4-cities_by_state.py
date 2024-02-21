@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+To print all cities in the database
+"""
 import sys
 import MySQLdb
 
