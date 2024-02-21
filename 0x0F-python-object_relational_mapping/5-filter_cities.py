@@ -11,6 +11,6 @@ if __name__ == "__main__":
     query = "SELECT * FROM `cities` as `c`\
             JOIN `states` as `s`\
             ON `c`.`state_id` = `s`.`id`\
-            ORDER BY `c`.`id`")
+            ORDER BY `c`.`id`"
     cursor.execute(query)
     print(", ".join([city[2] for city in cursor.fetchall() if city[4] == sys.argv[4]]))
