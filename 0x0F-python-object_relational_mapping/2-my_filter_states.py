@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+To print states passed as an argumemnts
+"""
 
 import sys
 import MySQLdb
