@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 # Lists all atates from the database hbtn_0e_0_usa.
 # Usage: ./2-my_filter_states.py <mysql username> \
 #                             <mysql password> \
