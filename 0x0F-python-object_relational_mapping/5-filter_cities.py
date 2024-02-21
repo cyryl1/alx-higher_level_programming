@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+To print cities of a state passed as an argument
+"""
 import sys
 import MySQLdb
 
