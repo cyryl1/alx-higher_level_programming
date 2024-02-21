@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+To print the states starting with N
+"""
 # Lists all atates from the database hbtn_0e_0_usa.
 # Usage: ./0-select_states.py <mysql username> \
 #                             <mysql password> \
