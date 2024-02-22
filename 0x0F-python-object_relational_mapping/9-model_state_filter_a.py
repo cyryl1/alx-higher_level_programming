@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-To print the states with letter 'a' in the table states
+To print the states with letter 'a' in the table states.
 """
 
 import sys
