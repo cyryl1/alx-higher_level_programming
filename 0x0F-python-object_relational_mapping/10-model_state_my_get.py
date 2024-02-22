@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-To print all states in the table states
+To print given state object in the database
 """
 
 import sys
