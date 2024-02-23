@@ -5,8 +5,8 @@ contained in the database
 """
 
 import sys
-from model_state import Base, State
-from model_city import City
+from relationship_state import State
+from relationship_city import City
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
@@ -19,11 +19,7 @@ if __name__ == "__main__":
             )
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).order_by(State.id).all()
-    for state in states:
+    for state in session.query(State).order_by(State.id):
         print("{}: {}".format(state.id, state.name))
-        cities = session.query(City).filter_by(
-                state_id=state.id
-                ).order_by(City.id).all()
-        for city in cities:
+        for city in state.cities:
             print("     {}: {}".format(city.id, city.name))
