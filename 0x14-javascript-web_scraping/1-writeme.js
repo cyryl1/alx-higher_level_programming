@@ -3,7 +3,7 @@
 const fs = require('fs');
 const args = process.argv;
 const file = args[2];
-const content = args[3];
+const content = args[3] || '';
 
 if (!file || !content) {
   console.log('Usage: ./script.js <filename> <content>');
@@ -12,6 +12,6 @@ if (!file || !content) {
 
 fs.writeFile(file, content, 'utf-8', (error) => {
   if (error) {
-    console.error('error: ', error);
+    console.error(error);
   }
 });
